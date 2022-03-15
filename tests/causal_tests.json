@@ -1,0 +1,69 @@
+{
+  "inputs": [
+    {"name": "width", "type": "float", "distribution": "scipy.stats.uniform(0, 10)"},
+    {"name": "height", "type": "float", "distribution": "scipy.stats.uniform(0, 10)"},
+    {"name": "intensity", "type": "float", "distribution": "scipy.stats.uniform(0, 10)"}
+  ],
+  "outputs": [
+    {"name": "num_lines_abs", "type": "float"},
+    {"name": "num_shapes_abs", "type": "float"}
+  ],
+  "metas": [
+    {"name": "num_lines_unit", "type": "float", "populate": "populate_num_lines_unit"},
+    {"name": "num_shapes_unit", "type": "float", "populate": "populate_num_shapes_unit"},
+    {"name": "width_plus_height", "type": "float", "populate": "populate_width_height"}
+  ],
+  "constraints": ["width > 0", "height > 0", "intensity > 0"],
+  "dag": "dag.dot",
+  "data": "data.csv",
+  "tests": [
+    {
+      "name": "num_lines_width",
+      "mutations": {"width": "Increase"},
+      "estimator": "WidthHeightEstimator",
+      "estimate_type": "ate",
+      "effect_modifiers": ["intensity", "height"],
+      "expectedEffect": {"num_lines_abs": "PoissonWidthHeight()"}
+    },
+    {
+      "name": "num_shapes_abs_unit",
+      "mutations": {"num_shapes_abs": "Increase"},
+      "estimator": "CausalForestEstimator",
+      "estimate_type": "ate",
+      "effect_modifiers": ["width", "height"],
+      "expectedEffect": {"num_lines_abs": "Positive()"}
+    },
+    {
+      "name": "num_lines_height",
+      "mutations": {"height": "Increase"},
+      "estimator": "WidthHeightEstimator",
+      "estimate_type": "ate",
+      "effect_modifiers": ["intensity", "width"],
+      "expectedEffect": {"num_lines_abs": "PoissonWidthHeight()"}
+    },
+    {
+      "name": "num_lines_width_unit",
+      "mutations": {"width": "Increase"},
+      "estimator": "LinearRegressionEstimator",
+      "estimate_type": "ate",
+      "effect_modifiers": ["intensity", "height"],
+      "expectedEffect": {"num_lines_unit": "Negative()"}
+    },
+    {
+      "name": "num_lines_height_unit",
+      "mutations": {"height": "Increase"},
+      "estimator": "LinearRegressionEstimator",
+      "estimate_type": "ate",
+      "effect_modifiers": ["intensity", "width"],
+      "expectedEffect": {"num_lines_unit": "Negative()"}
+    },
+    {
+      "name": "intensity",
+      "mutations": {"intensity": "ChangeByFactor(2)"},
+      "estimator": "LinearRegressionEstimator",
+      "estimate_type": "risk_ratio",
+      "expectedEffect": {"num_shapes_unit": "ExactValue(4, tolerance=0.5)"}
+    }
+  ]
+
+}

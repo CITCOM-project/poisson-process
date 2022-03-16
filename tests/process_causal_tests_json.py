@@ -4,7 +4,7 @@ from causal_testing.specification.causal_dag import CausalDAG
 from causal_testing.specification.causal_specification import CausalSpecification
 from causal_testing.generation.abstract_causal_test_case import AbstractCausalTestCase
 from causal_testing.data_collection.data_collector import ObservationalDataCollector
-from causal_testing.testing.causal_test_outcome import ExactValue, Positive, Negative, CausalTestOutcome, CausalTestResult
+from causal_testing.testing.causal_test_outcome import ExactValue, Positive, Negative, CausalTestResult, NoEffect
 from causal_testing.testing.causal_test_engine import CausalTestEngine
 from causal_testing.testing.estimators import LinearRegressionEstimator, Estimator, CausalForestEstimator
 
@@ -15,71 +15,8 @@ import pandas as pd
 
 from fitter import Fitter, get_common_distributions
 
-class WidthHeightEstimator(LinearRegressionEstimator):
-    def add_modelling_assumptions(self):
-        """
-        Add modelling assumptions to the estimator. This is a list of strings which list the modelling assumptions that
-        must hold if the resulting causal inference is to be considered valid.
-        """
-        self.modelling_assumptions += 'The output varies according to 2i(w+h)'
-
-    def estimate_ate(self) -> (float, [float, float], float):
-        """ Estimate the conditional average treatment effect of the treatment on the outcome. That is, the change
-        in outcome caused by changing the treatment variable from the control value to the treatment value.
-
-        :return: The conditional average treatment effect and the 95% Wald confidence intervals.
-        """
-        assert self.effect_modifiers, f"Must have at least one effect modifier to compute CATE - {self.effect_modifiers}."
-        x = pd.DataFrame()
-        x[self.treatment[0]] = [self.treatment_values, self.control_values]
-        x['Intercept'] = 1
-        for k, v in self.effect_modifiers.items():
-            self.adjustment_set.add(k)
-            x[k] = v
-        if hasattr(self, "product_terms"):
-            for a, b in self.product_terms:
-                x[f"{a}*{b}"] = x[a] * x[b]
-
-        x.drop(['width', 'height'], axis=1, inplace=True)
-        self.adjustment_set = {"width*intensity", "height*intensity"}
-
-        print(x)
-        print(self.adjustment_set)
-
-        model = self._run_linear_regression()
-        print(model.summary())
-        y = model.predict(x)
-        treatment_outcome = y.iloc[0]
-        control_outcome = y.iloc[1]
-
-        return treatment_outcome - control_outcome, None
-
-
-class PoissonWidthHeight(CausalTestOutcome):
-    """An extension of TestOutcome representing that the expected causal effect should be positive."""
-
-    def __init__(self, tolerance=0.5):
-        self.tolerance = tolerance
-        self.i2c = None
-
-    def apply(self, res: CausalTestResult) -> bool:
-        # TODO: confidence intervals?
-        print("=== APPLYING ===")
-        print("effect_modifier_configuration", res.effect_modifier_configuration)
-        effect_modifier_configuration = {k.name: v for k, v in res.effect_modifier_configuration.items()}
-        c = res.treatment_value - res.control_value
-        i = effect_modifier_configuration['intensity']
-        self.i2c = i*2*c
-        print("2ic:", f"2*{i}*{c}={self.i2c}")
-        print("ate:", res.ate)
-        return np.isclose(res.ate, self.i2c, atol=self.tolerance)
-
-    def __str__(self):
-        if self.i2c is None:
-            return f"PoissonWidthHeight±{self.tolerance}"
-        else:
-            return f"PoissonWidthHeight:{self.i2c}±{self.tolerance}"
-
+from custom_outcomes import PoissonIntensity, PoissonWidthHeight
+from custom_estimators import WidthHeightEstimator
 
 def populate_width_height(data):
     data['width_plus_height'] = data['width'] + data['height']
@@ -141,14 +78,20 @@ def execute_test_case(causal_test_case, estimator):
                                              causal_test_engine.scenario_execution_data_df,
                                              effect_modifiers=causal_test_case.effect_modifier_configuration
                                              )
-    if "intensity" in [v.name for v in treatment_vars]:
+    if "intensity" in [v.name for v in treatment_vars] and hasattr(estimation_model, "add_squared_term_to_df"):
         estimation_model.add_squared_term_to_df("intensity")
-    if "width" in [v.name for v in treatment_vars] or "height" in [v.name for v in treatment_vars]:
+    if isinstance(estimation_model, WidthHeightEstimator):
         estimation_model.add_product_term_to_df("width", "intensity")
         estimation_model.add_product_term_to_df("height", "intensity")
     causal_test_result = causal_test_engine.execute_test(estimation_model, estimate_type=causal_test_case.estimate_type)
     test_passes = causal_test_case.expected_causal_effect.apply(causal_test_result)
-    # assert test_passes, f"{causal_test_case}\n    FAILED - expected {causal_test_case.expected_causal_effect}, got {causal_test_result.ate}"
+
+    result_string = ""
+    if causal_test_result.ci_low() and causal_test_result.ci_high():
+        result_string  = f"{causal_test_result.ci_low()} < {causal_test_result.ate} <  {causal_test_result.ci_high()}"
+    else:
+        result_string = causal_test_result.ate
+    assert test_passes, f"{causal_test_case}\n    FAILED - expected {causal_test_case.expected_causal_effect}, got {result_string}"
     if not test_passes:
         global failures
         failures += 1
@@ -168,6 +111,8 @@ executed_tests = 0
 # for test in test_plan['tests']]
 
 for test in test_plan['tests']:
+    if "skip" in test and test['skip']:
+        continue
     abstract_test = AbstractCausalTestCase(
         scenario=modelling_scenario,
         intervention_constraints=[mutate[v](k) for k, v in test['mutations'].items()],
@@ -176,7 +121,7 @@ for test in test_plan['tests']:
         effect_modifiers={modelling_scenario.variables[v] for v in test['effect_modifiers']} if "effect_modifiers" in test else {},
         estimate_type=test['estimate_type']
     )
-    concrete_tests, runs = abstract_test.generate_concrete_tests(5, 0.05)
+    concrete_tests, runs = abstract_test.generate_concrete_tests(5, 0.5)
     print(abstract_test)
     print([(v.name, v.distribution) for v in abstract_test.treatment_variables])
     print(len(concrete_tests))

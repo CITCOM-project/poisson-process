@@ -9,7 +9,5 @@ digraph poisson_line_process {
   height -> num_shapes_unit;
   num_lines_abs -> num_lines_unit;
   num_shapes_abs -> num_shapes_unit [color="orange"];
-  intensity -> num_lines_abs;
-  intensity -> num_shapes_abs [color="orange"];
-  num_lines_abs -> num_shapes_abs;
-}
+  intensity -> num_lines_abs [color="orange"];
+  num_lines_abs -> num_shapes_abs  [color="orange"];}

@@ -98,13 +98,12 @@ def populate_num_shapes_unit(data):
 
 def json_parse(file):
     with open(file) as f:
-        test_plan = json.loads("".join(f.readlines()))
+        test_plan = json.load(f)
 
     inputs = [Input(i['name'], eval(i['type']), eval(i['distribution'])) for i in test_plan['inputs']]
     outputs = [Output(i['name'], eval(i['type'])) for i in test_plan['outputs']]
     metas = [Meta(i['name'], eval(i['type']), eval(i['populate'])) for i in
              test_plan['metas']] if "metas" in test_plan else []
-
     data = pd.read_csv(test_plan['data'])
 
     for meta in metas:

@@ -100,10 +100,13 @@ def json_parse(file):
     with open(file) as f:
         test_plan = json.load(f)
 
-    inputs = [Input(i['name'], eval(i['type']), eval(i['distribution'])) for i in test_plan['inputs']]
-    outputs = [Output(i['name'], eval(i['type'])) for i in test_plan['outputs']]
-    metas = [Meta(i['name'], eval(i['type']), eval(i['populate'])) for i in
+    type_dict = {"float": float, "str": str, "int": int}
+
+    inputs = [Input(i['name'], type_dict[i['type']], eval(i['distribution'])) for i in test_plan['inputs']]
+    outputs = [Output(i['name'], type_dict[i['type']]) for i in test_plan['outputs']]
+    metas = [Meta(i['name'], type_dict[i['type']], eval(i['populate'])) for i in
              test_plan['metas']] if "metas" in test_plan else []
+
     data = pd.read_csv(test_plan['data'])
 
     for meta in metas:
@@ -123,7 +126,7 @@ def json_parse(file):
 # TODO: Work out how best to get constraints in there
 
 
-def execute_test_case(causal_test_case, estimator):
+def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan, causal_specification):
     data_collector = ObservationalDataCollector(modelling_scenario, test_plan['data'])
     causal_test_engine = CausalTestEngine(causal_test_case, causal_specification, data_collector)
     minimal_adjustment_set = causal_test_engine.load_data(index_col=0)
@@ -163,8 +166,7 @@ def execute_test_case(causal_test_case, estimator):
 # )
 # for test in test_plan['tests']]
 
-
-if __name__ == '__main__':
+def main():
     inputs, outputs, metas, test_plan = json_parse("causal_tests.json")
     modelling_scenario = Scenario(inputs + outputs + metas, [])
     modelling_scenario.setup_treatment_variables()
@@ -197,5 +199,9 @@ if __name__ == '__main__':
         for concrete_test in concrete_tests:
             print(concrete_test)
             executed_tests += 1
-            execute_test_case(concrete_test, eval(test['estimator']))
+            execute_test_case(concrete_test, eval(test['estimator']), modelling_scenario, test_plan, causal_specification)
     print(f"{failures}/{executed_tests} failed")
+
+
+if __name__ == '__main__':
+    main()

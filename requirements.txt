@@ -1,0 +1,9 @@
+fitter
+lhsmdu
+matplotlib
+numpy
+pandas
+scipy
+Shapely
+statsmodels
+git+https://github.com/CITCOM-project/CausalTestingFramework.git

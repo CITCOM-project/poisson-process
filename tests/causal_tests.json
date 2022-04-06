@@ -1,8 +1,8 @@
 {
   "inputs": [
-    {"name": "width", "type": "float", "distribution": "scipy.stats.uniform(0, 10)"},
-    {"name": "height", "type": "float", "distribution": "scipy.stats.uniform(0, 10)"},
-    {"name": "intensity", "type": "float", "distribution": "scipy.stats.uniform(0, 10)"}
+    {"name": "width", "type": "float", "distribution": "uniform"},
+    {"name": "height", "type": "float", "distribution": "uniform"},
+    {"name": "intensity", "type": "float", "distribution": "uniform"}
   ],
   "outputs": [
     {"name": "num_lines_abs", "type": "float"},

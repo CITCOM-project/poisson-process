@@ -11,11 +11,22 @@ import pandas as pd
 from fitter import Fitter, get_common_distributions
 
 import causal_test_setup as cts
-from causal_test_setup import WidthHeightEstimator, PoissonWidthHeight, populate_width_height, \
+from causal_test_setup import WidthHeightEstimator, PoissonWidthHeight, \
     populate_num_lines_unit, populate_num_shapes_unit, distributions
 
 
 def json_parse(file):
+    """Parse a JSON input file into inputs, outputs, metas and a test plan
+
+    :param file: path to JSON input file to be parsed
+    :returns:
+        - inputs -  variables that are input parameters to the system
+        - outputs -  variables that are outputs from the system
+        - metas - variables that are not directly observable but are relevant to system testing, e.g. a model may take
+         a location parameter and expand this out into average_age and household_size variables "under the hood".
+          These parameters can be made explicit by instantiating them as metavariables.
+        - test_plan - json object containing execution data for the system-under-test
+    """
     with open(file) as f:
         test_plan = json.load(f)
 
@@ -75,17 +86,7 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan
         print(f"    FAILED - expected {causal_test_case.expected_causal_effect}, got {causal_test_result.ate}")
 
 
-# abstract_tests = [AbstractCausalTestCase(
-#     scenario=modelling_scenario,
-#     intervention_constraints=[mutate[v](k) for k, v in test['mutations'].items()],
-#     treatment_variables={modelling_scenario.variables[v] for v in test['mutations']},
-#     expected_causal_effect={modelling_scenario.variables[variable]: eval(effect) for variable, effect in test["expectedEffect"].items()},
-#     effect_modifiers={modelling_scenario.variables[v] for v in test['effect_modifiers']} if "effect_modifiers" in test else {},
-#     estimate_type=test['estimate_type']
-# )
-# for test in test_plan['tests']]
-
-def main():
+if __name__ == '__main__':
     inputs, outputs, metas, test_plan = json_parse("causal_tests.json")
     modelling_scenario = Scenario(inputs + outputs + metas, [])
     modelling_scenario.setup_treatment_variables()
@@ -120,7 +121,3 @@ def main():
             executed_tests += 1
             execute_test_case(concrete_test, eval(test['estimator']), modelling_scenario, test_plan, causal_specification)
     print(f"{failures}/{executed_tests} failed")
-
-
-if __name__ == '__main__':
-    main()

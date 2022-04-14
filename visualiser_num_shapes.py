@@ -14,24 +14,38 @@ import os
 
 cwd = os.getcwd()
 
-datapath = "data.csv"
-if "tests" not in os.getcwd():
-    datapath = "tests/"+datapath
+datapath = "data/random/data_random_2000.csv"
+# if "tests" not in os.getcwd():
+#     datapath = "tests/"+datapath
 
 data = pd.read_csv(datapath)
 
-area = data['width'] * data['height']
-data['num_shapes_unit'] = data['num_shapes_abs']/area
-assert all([s > 0 for s in data['num_shapes_abs']])
-assert all([s > 0 for s in data['num_shapes_unit']])
+data['area'] = data['width'] * data['height']
+data['num_shapes_unit'] = data['num_shapes_abs']/data['area']
+assert all([s >= 0 for s in data['intensity']])
+assert all([s >= 0 for s in data['num_shapes_unit']])
 
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 
-ax.scatter(area, data['num_shapes_abs'], data['num_shapes_unit'])
-ax.set_xlabel("width*height")
-ax.set_ylabel("num_shapes_abs")
+ax.scatter(data['area'], data['intensity'], data['num_shapes_unit'])
+ax.set_xlabel("area")
+ax.set_ylabel("intensity")
 ax.set_zlabel("num_shapes_unit")
+
+data['intensity^2'] = data['intensity'] ** 2
+
+data['1/area'] = 1/data['area']
+regression = sm.OLS(data['num_shapes_unit'], data[['width', 'height', '1/area', 'intensity', 'intensity^2']])
+model = regression.fit()
+
+print(model.summary())
+
+
+predicted_num_shapes_unit = model.predict(data[['width', 'height', '1/area', 'intensity', 'intensity^2']])
+
+ax.plot_trisurf(data['area'], data['intensity'], predicted_num_shapes_unit, color="yellow", alpha=0.5)
+
 
 # wh = np.linspace(0, 32)
 # i = np.linspace(0, 32)

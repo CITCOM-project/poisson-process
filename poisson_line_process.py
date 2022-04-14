@@ -40,6 +40,8 @@ def realize_poisson_line_process(
         rectangle. Each line is given as a pair of
         ``(slope, intercept)``.
     """
+    if intensity == 0 or width == 0 or height == 0:
+        return []
 
     rng = default_rng()
 

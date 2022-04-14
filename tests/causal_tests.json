@@ -96,7 +96,7 @@
       "estimate_type": "ate",
       "effect_modifiers": [],
       "expectedEffect": {"num_shapes_unit": "NoEffect()"},
-      "skip": false
+      "skip": true
     },
     {
       "name": "num_shapes_abs__num_lines_unit",
@@ -239,7 +239,7 @@
       "estimator": "LinearRegressionEstimator",
       "estimate_type": "risk_ratio",
       "expectedEffect": {"num_shapes_unit": "ExactValue(4, tolerance=0.5)"},
-      "skip": true
+      "skip": false
     },
     {
       "name": "intensity__height",

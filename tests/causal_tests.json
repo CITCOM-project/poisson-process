@@ -23,7 +23,7 @@
       "estimator": "WidthHeightEstimator",
       "estimate_type": "ate",
       "effect_modifiers": ["intensity", "height"],
-      "expectedEffect": {"num_lines_abs": "PoissonWidthHeight()"}
+      "expectedEffect": {"num_lines_abs": "PoissonWidthHeight"}
     },
     {
       "name": "num_shapes_abs_unit",
@@ -31,7 +31,7 @@
       "estimator": "CausalForestEstimator",
       "estimate_type": "ate",
       "effect_modifiers": ["width", "height"],
-      "expectedEffect": {"num_lines_abs": "Positive()"}
+      "expectedEffect": {"num_lines_abs": "Positive"}
     },
     {
       "name": "num_lines_height",
@@ -39,7 +39,7 @@
       "estimator": "WidthHeightEstimator",
       "estimate_type": "ate",
       "effect_modifiers": ["intensity", "width"],
-      "expectedEffect": {"num_lines_abs": "PoissonWidthHeight()"}
+      "expectedEffect": {"num_lines_abs": "PoissonWidthHeight"}
     },
     {
       "name": "num_lines_width_unit",
@@ -47,7 +47,7 @@
       "estimator": "LinearRegressionEstimator",
       "estimate_type": "ate",
       "effect_modifiers": ["intensity", "height"],
-      "expectedEffect": {"num_lines_unit": "Negative()"}
+      "expectedEffect": {"num_lines_unit": "Negative"}
     },
     {
       "name": "num_lines_height_unit",
@@ -55,14 +55,14 @@
       "estimator": "LinearRegressionEstimator",
       "estimate_type": "ate",
       "effect_modifiers": ["intensity", "width"],
-      "expectedEffect": {"num_lines_unit": "Negative()"}
+      "expectedEffect": {"num_lines_unit": "Negative"}
     },
     {
       "name": "intensity",
       "mutations": {"intensity": "ChangeByFactor(2)"},
       "estimator": "LinearRegressionEstimator",
       "estimate_type": "risk_ratio",
-      "expectedEffect": {"num_shapes_unit": "ExactValue(4, tolerance=0.5)"}
+      "expectedEffect": {"num_shapes_unit": "ExactValue4_05"}
     }
   ]
 

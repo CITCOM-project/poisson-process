@@ -5,10 +5,6 @@ import scipy
 import numpy as np
 import pandas as pd
 
-distributions = {
-    "uniform": scipy.stats.uniform(0, 10)
-}
-
 
 class WidthHeightEstimator(LinearRegressionEstimator):
     def add_modelling_assumptions(self):
@@ -87,3 +83,22 @@ def populate_num_lines_unit(data):
 def populate_num_shapes_unit(data):
     area = data['width'] * data['height']
     data['num_shapes_unit'] = data['num_lines_abs'] / area
+
+
+distributions = {
+    "uniform": scipy.stats.uniform(0, 10)
+}
+
+effects = {
+    "PoissonWidthHeight": PoissonWidthHeight(),
+    "Positive": Positive(),
+    "Negative": Negative(),
+    "ExactValue4_05": ExactValue(4, tolerance=0.5)
+}
+
+estimators = {
+    "WidthHeightEstimator": WidthHeightEstimator,
+    "CausalForestEstimator": CausalForestEstimator,
+    "LinearRegressionEstimator": LinearRegressionEstimator,
+
+}

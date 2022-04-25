@@ -11,11 +11,10 @@ import pandas as pd
 from fitter import Fitter, get_common_distributions
 
 import causal_test_setup as cts
-from causal_test_setup import WidthHeightEstimator, PoissonWidthHeight, \
-    populate_num_lines_unit, populate_num_shapes_unit, distributions
+from causal_test_setup import populate_num_lines_unit, populate_num_shapes_unit, distributions
 
 
-def json_parse(file):
+def json_parse(file) -> tuple():
     """Parse a JSON input file into inputs, outputs, metas and a test plan
 
     :param file: path to JSON input file to be parsed
@@ -36,7 +35,7 @@ def json_parse(file):
     outputs = [Output(i['name'], type_dict[i['type']]) for i in test_plan['outputs']]
     metas = [Meta(i['name'], type_dict[i['type']], getattr(cts, i['populate'])) for i in
              test_plan['metas']] if "metas" in test_plan else []
-
+    print(type(inputs))
     data = pd.read_csv(test_plan['data'])
 
     for meta in metas:
@@ -86,9 +85,9 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan
         print(f"    FAILED - expected {causal_test_case.expected_causal_effect}, got {causal_test_result.ate}")
 
 
-if __name__ == '__main__':
+def main():
     inputs, outputs, metas, test_plan = json_parse("causal_tests.json")
-    modelling_scenario = Scenario(inputs + outputs + metas, [])
+    modelling_scenario = Scenario(inputs + outputs + metas, None)
     modelling_scenario.setup_treatment_variables()
     causal_specification = CausalSpecification(scenario=modelling_scenario, causal_dag=CausalDAG(test_plan['dag']))
 
@@ -100,13 +99,14 @@ if __name__ == '__main__':
         "ChangeByFactor(2)": lambda x: modelling_scenario.treatment_variables[x].z3 == modelling_scenario.variables[
             x].z3 * 2
     }
-
+    for test in test_plan['tests']:
+        print(test['estimator'])
     for test in test_plan['tests']:
         abstract_test = AbstractCausalTestCase(
             scenario=modelling_scenario,
             intervention_constraints=[mutate[v](k) for k, v in test['mutations'].items()],
             treatment_variables={modelling_scenario.variables[v] for v in test['mutations']},
-            expected_causal_effect={modelling_scenario.variables[variable]: eval(effect) for variable, effect in
+            expected_causal_effect={modelling_scenario.variables[variable]: cts.effects[effect] for variable, effect in
                                     test["expectedEffect"].items()},
             effect_modifiers={modelling_scenario.variables[v] for v in
                               test['effect_modifiers']} if "effect_modifiers" in test else {},
@@ -119,5 +119,10 @@ if __name__ == '__main__':
         for concrete_test in concrete_tests:
             print(concrete_test)
             executed_tests += 1
-            execute_test_case(concrete_test, eval(test['estimator']), modelling_scenario, test_plan, causal_specification)
+            execute_test_case(concrete_test, cts.estimators[test['estimator']], modelling_scenario, test_plan,
+                              causal_specification)
     print(f"{failures}/{executed_tests} failed")
+
+
+if __name__ == '__main__':
+    main()

@@ -11,7 +11,6 @@ import pandas as pd
 from fitter import Fitter, get_common_distributions
 
 import causal_test_setup as cts
-from causal_test_setup import populate_num_lines_unit, populate_num_shapes_unit, distributions
 
 
 def json_parse(file) -> tuple():
@@ -31,11 +30,10 @@ def json_parse(file) -> tuple():
 
     type_dict = {"float": float, "str": str, "int": int}
 
-    inputs = [Input(i['name'], type_dict[i['type']], distributions[i['distribution']]) for i in test_plan['inputs']]
+    inputs = [Input(i['name'], type_dict[i['type']], cts.distributions[i['distribution']]) for i in test_plan['inputs']]
     outputs = [Output(i['name'], type_dict[i['type']]) for i in test_plan['outputs']]
     metas = [Meta(i['name'], type_dict[i['type']], getattr(cts, i['populate'])) for i in
              test_plan['metas']] if "metas" in test_plan else []
-    print(type(inputs))
     data = pd.read_csv(test_plan['data'])
 
     for meta in metas:
@@ -56,6 +54,7 @@ def json_parse(file) -> tuple():
 
 
 def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan, causal_specification):
+
     data_collector = ObservationalDataCollector(modelling_scenario, test_plan['data'])
     causal_test_engine = CausalTestEngine(causal_test_case, causal_specification, data_collector)
     minimal_adjustment_set = causal_test_engine.load_data(index_col=0)
@@ -100,8 +99,6 @@ def main():
             x].z3 * 2
     }
     for test in test_plan['tests']:
-        print(test['estimator'])
-    for test in test_plan['tests']:
         abstract_test = AbstractCausalTestCase(
             scenario=modelling_scenario,
             intervention_constraints=[mutate[v](k) for k, v in test['mutations'].items()],
@@ -117,7 +114,6 @@ def main():
         print([(v.name, v.distribution) for v in abstract_test.treatment_variables])
         print(len(concrete_tests))
         for concrete_test in concrete_tests:
-            print(concrete_test)
             executed_tests += 1
             execute_test_case(concrete_test, cts.estimators[test['estimator']], modelling_scenario, test_plan,
                               causal_specification)

@@ -13,7 +13,7 @@ from fitter import Fitter, get_common_distributions
 import causal_test_setup as cts
 
 
-def json_parse(file) -> tuple():
+def json_parse(file) -> tuple[list, list, list, dict]:
     """Parse a JSON input file into inputs, outputs, metas and a test plan
 
     :param file: path to JSON input file to be parsed
@@ -53,8 +53,16 @@ def json_parse(file) -> tuple():
 # TODO: Work out how best to get constraints in there
 
 
-def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan, causal_specification):
+def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan: dict, causal_specification):
+    """
+    Takes a given test case and runs it using the CausalTestingFramework.
 
+    :param causal_test_case:
+    :param estimator:
+    :param modelling_scenario:
+    :param test_plan:
+    :param causal_specification:
+    """
     data_collector = ObservationalDataCollector(modelling_scenario, test_plan['data'])
     causal_test_engine = CausalTestEngine(causal_test_case, causal_specification, data_collector)
     minimal_adjustment_set = causal_test_engine.load_data(index_col=0)

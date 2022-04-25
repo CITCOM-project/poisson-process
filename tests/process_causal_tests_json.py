@@ -63,6 +63,7 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan
     :param test_plan:
     :param causal_specification:
     """
+    failed = False
     data_collector = ObservationalDataCollector(modelling_scenario, test_plan['data'])
     causal_test_engine = CausalTestEngine(causal_test_case, causal_specification, data_collector)
     minimal_adjustment_set = causal_test_engine.load_data(index_col=0)
@@ -87,9 +88,9 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan
     test_passes = causal_test_case.expected_causal_effect.apply(causal_test_result)
     # assert test_passes, f"{causal_test_case}\n    FAILED - expected {causal_test_case.expected_causal_effect}, got {causal_test_result.ate}"
     if not test_passes:
-        global failures
-        failures += 1
+        failed = True
         print(f"    FAILED - expected {causal_test_case.expected_causal_effect}, got {causal_test_result.ate}")
+    return failed
 
 
 def main():
@@ -98,8 +99,8 @@ def main():
     modelling_scenario.setup_treatment_variables()
     causal_specification = CausalSpecification(scenario=modelling_scenario, causal_dag=CausalDAG(test_plan['dag']))
 
-    failures = 0
     executed_tests = 0
+    failures = 0
 
     mutate = {
         "Increase": lambda x: modelling_scenario.treatment_variables[x].z3 > modelling_scenario.variables[x].z3,
@@ -123,8 +124,11 @@ def main():
         print(len(concrete_tests))
         for concrete_test in concrete_tests:
             executed_tests += 1
-            execute_test_case(concrete_test, cts.estimators[test['estimator']], modelling_scenario, test_plan,
-                              causal_specification)
+            failed = execute_test_case(concrete_test, cts.estimators[test['estimator']], modelling_scenario, test_plan,
+                                       causal_specification)
+            if failed:
+                failures += 1
+
     print(f"{failures}/{executed_tests} failed")
 
 

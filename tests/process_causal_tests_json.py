@@ -5,6 +5,7 @@ from causal_testing.specification.causal_specification import CausalSpecificatio
 from causal_testing.generation.abstract_causal_test_case import AbstractCausalTestCase
 from causal_testing.data_collection.data_collector import ObservationalDataCollector
 from causal_testing.testing.causal_test_engine import CausalTestEngine
+import argparse
 import scipy
 import json
 import pandas as pd
@@ -53,7 +54,7 @@ def json_parse(file) -> tuple[list, list, list, dict]:
 # TODO: Work out how best to get constraints in there
 
 
-def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan: dict, causal_specification):
+def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan: dict, causal_specification) -> bool():
     """
     Takes a given test case and runs it using the CausalTestingFramework.
 
@@ -94,7 +95,13 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan
 
 
 def main():
-    inputs, outputs, metas, test_plan = json_parse("causal_tests.json")
+
+    parser = argparse.ArgumentParser(description='A script for parsing json config files for the Causal Testing Framework')
+    parser.add_argument("--json_path", help="path to the json file containing the causal tests", default="causal_tests.json")
+    args = parser.parse_args()
+    json_path = args.json_path
+
+    inputs, outputs, metas, test_plan = json_parse(json_path)
     modelling_scenario = Scenario(inputs + outputs + metas, None)
     modelling_scenario.setup_treatment_variables()
     causal_specification = CausalSpecification(scenario=modelling_scenario, causal_dag=CausalDAG(test_plan['dag']))

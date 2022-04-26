@@ -63,6 +63,7 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan
     :param modelling_scenario:
     :param test_plan:
     :param causal_specification:
+    :return: True if test failed, returns false otherwise.
     """
     failed = False
     data_collector = ObservationalDataCollector(modelling_scenario, test_plan['data'])

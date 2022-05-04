@@ -90,7 +90,7 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan
     causal_test_result = causal_test_engine.execute_test(estimation_model, estimate_type=causal_test_case.estimate_type)
     test_passes = causal_test_case.expected_causal_effect.apply(causal_test_result)
 
-    result_string = ""
+    result_string = str()
     if causal_test_result.ci_low() and causal_test_result.ci_high():
         result_string  = f"{causal_test_result.ci_low()} < {causal_test_result.ate} <  {causal_test_result.ci_high()}"
     else:

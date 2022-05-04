@@ -1,0 +1,340 @@
+[
+  {
+    "name": "width__num_lines_abs",
+    "mutations": {
+      "width": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_lines_abs": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "width__num_shapes_abs",
+    "mutations": {
+      "width": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_abs": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "width__num_lines_unit",
+    "mutations": {
+      "width": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_lines_unit": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "width__num_shapes_unit",
+    "mutations": {
+      "width": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_unit": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "width__height",
+    "mutations": {
+      "width": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "height": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "width__intensity",
+    "mutations": {
+      "width": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "intensity": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "num_lines_abs__num_shapes_abs",
+    "mutations": {
+      "num_lines_abs": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_abs": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "num_lines_abs__num_lines_unit",
+    "mutations": {
+      "num_lines_abs": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_lines_unit": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "num_lines_abs__num_shapes_unit",
+    "mutations": {
+      "num_lines_abs": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_unit": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "num_shapes_abs__num_lines_unit",
+    "mutations": {
+      "num_shapes_abs": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_lines_unit": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "num_shapes_abs__num_shapes_unit",
+    "mutations": {
+      "num_shapes_abs": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_unit": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "num_lines_unit__num_shapes_abs",
+    "mutations": {
+      "num_lines_unit": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_abs": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "num_lines_unit__num_shapes_unit",
+    "mutations": {
+      "num_lines_unit": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_unit": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "num_shapes_unit__num_lines_unit",
+    "mutations": {
+      "num_shapes_unit": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_lines_unit": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "height__width",
+    "mutations": {
+      "height": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "width": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "height__num_lines_abs",
+    "mutations": {
+      "height": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_lines_abs": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "height__num_shapes_abs",
+    "mutations": {
+      "height": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_abs": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "height__num_lines_unit",
+    "mutations": {
+      "height": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_lines_unit": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "height__num_shapes_unit",
+    "mutations": {
+      "height": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_unit": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "height__intensity",
+    "mutations": {
+      "height": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "intensity": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "intensity__width",
+    "mutations": {
+      "intensity": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "width": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "intensity__num_lines_abs",
+    "mutations": {
+      "intensity": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_lines_abs": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "intensity__num_shapes_abs",
+    "mutations": {
+      "intensity": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_abs": "??"
+    },
+    "skip": true
+  },
+  {
+    "name": "intensity__num_lines_unit",
+    "mutations": {
+      "intensity": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_lines_unit": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "intensity__num_shapes_unit",
+    "mutations": {
+      "intensity": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "num_shapes_unit": "NoEffect()"
+    },
+    "skip": true
+  },
+  {
+    "name": "intensity__height",
+    "mutations": {
+      "intensity": "??"
+    },
+    "estimator": "??",
+    "estimate_type": "??",
+    "effect_modifiers": [],
+    "expectedEffect": {
+      "height": "NoEffect()"
+    },
+    "skip": true
+  }
+]

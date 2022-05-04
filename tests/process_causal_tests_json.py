@@ -4,7 +4,7 @@ from causal_testing.specification.causal_dag import CausalDAG
 from causal_testing.specification.causal_specification import CausalSpecification
 from causal_testing.generation.abstract_causal_test_case import AbstractCausalTestCase
 from causal_testing.data_collection.data_collector import ObservationalDataCollector
-from causal_testing.testing.causal_test_engine import CausalTestEngine
+from causal_testing.testing.causal_test_outcome import ExactValue, Positive, Negative, CausalTestResult, NoEffect
 import argparse
 import scipy
 import json
@@ -74,21 +74,27 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan
     # @andrewc19, why can we only have atomic control/treatment values?
     # I think it'd be good to pass it in as two dicts instead of vars, control, treatment lists
     estimation_model = estimator((list(treatment_vars)[0].name,),
-                                 [causal_test_case.treatment_input_configuration[v] for v in treatment_vars][0],
-                                 [causal_test_case.control_input_configuration[v] for v in treatment_vars][0],
-                                 minimal_adjustment_set,
-                                 (list(causal_test_case.outcome_variables)[0].name,),
-                                 causal_test_engine.scenario_execution_data_df,
-                                 effect_modifiers=causal_test_case.effect_modifier_configuration
-                                 )
-    if "intensity" in [v.name for v in treatment_vars]:
+                                             [causal_test_case.treatment_input_configuration[v] for v in treatment_vars][0],
+                                             [causal_test_case.control_input_configuration[v] for v in treatment_vars][0],
+                                             minimal_adjustment_set,
+                                             (list(causal_test_case.outcome_variables)[0].name,),
+                                             causal_test_engine.scenario_execution_data_df,
+                                             effect_modifiers=causal_test_case.effect_modifier_configuration
+                                             )
+    if "intensity" in [v.name for v in treatment_vars] and hasattr(estimation_model, "add_squared_term_to_df"):
         estimation_model.add_squared_term_to_df("intensity")
-    if "width" in [v.name for v in treatment_vars] or "height" in [v.name for v in treatment_vars]:
+    if isinstance(estimation_model, WidthHeightEstimator):
         estimation_model.add_product_term_to_df("width", "intensity")
         estimation_model.add_product_term_to_df("height", "intensity")
     causal_test_result = causal_test_engine.execute_test(estimation_model, estimate_type=causal_test_case.estimate_type)
     test_passes = causal_test_case.expected_causal_effect.apply(causal_test_result)
-    # assert test_passes, f"{causal_test_case}\n    FAILED - expected {causal_test_case.expected_causal_effect}, got {causal_test_result.ate}"
+
+    result_string = ""
+    if causal_test_result.ci_low() and causal_test_result.ci_high():
+        result_string  = f"{causal_test_result.ci_low()} < {causal_test_result.ate} <  {causal_test_result.ci_high()}"
+    else:
+        result_string = causal_test_result.ate
+    assert test_passes, f"{causal_test_case}\n    FAILED - expected {causal_test_case.expected_causal_effect}, got {result_string}"
     if not test_passes:
         failed = True
         print(f"    FAILED - expected {causal_test_case.expected_causal_effect}, got {causal_test_result.ate}")

@@ -1,5 +1,5 @@
 from causal_testing.testing.estimators import LinearRegressionEstimator, Estimator, CausalForestEstimator
-from causal_testing.testing.causal_test_outcome import ExactValue, Positive, Negative, CausalTestOutcome, \
+from causal_testing.testing.causal_test_outcome import ExactValue, Positive, Negative, NoEffect, CausalTestOutcome, \
     CausalTestResult
 import scipy
 import numpy as np
@@ -93,7 +93,8 @@ effects = {
     "PoissonWidthHeight": PoissonWidthHeight(),
     "Positive": Positive(),
     "Negative": Negative(),
-    "ExactValue4_05": ExactValue(4, tolerance=0.5)
+    "ExactValue4_05": ExactValue(4, tolerance=0.5),
+    "NoEffect": NoEffect()
 }
 
 estimators = {

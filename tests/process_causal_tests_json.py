@@ -5,6 +5,7 @@ from causal_testing.specification.causal_specification import CausalSpecificatio
 from causal_testing.generation.abstract_causal_test_case import AbstractCausalTestCase
 from causal_testing.data_collection.data_collector import ObservationalDataCollector
 from causal_testing.testing.causal_test_outcome import ExactValue, Positive, Negative, CausalTestResult, NoEffect
+from causal_testing.testing.causal_test_engine import CausalTestEngine
 import argparse
 import scipy
 import json
@@ -83,7 +84,7 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan
                                              )
     if "intensity" in [v.name for v in treatment_vars] and hasattr(estimation_model, "add_squared_term_to_df"):
         estimation_model.add_squared_term_to_df("intensity")
-    if isinstance(estimation_model, WidthHeightEstimator):
+    if isinstance(estimation_model, cts.WidthHeightEstimator):
         estimation_model.add_product_term_to_df("width", "intensity")
         estimation_model.add_product_term_to_df("height", "intensity")
     causal_test_result = causal_test_engine.execute_test(estimation_model, estimate_type=causal_test_case.estimate_type)

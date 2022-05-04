@@ -235,7 +235,7 @@
     },
     {
       "name": "intensity__num_shapes_unit",
-      "mutations": {"intensity": "ChangeByFactor2"},
+      "mutations": {"intensity": "ChangeByFactor(2)"},
       "estimator": "LinearRegressionEstimator",
       "estimate_type": "risk_ratio",
       "expectedEffect": {"num_shapes_unit": "ExactValue4_05"},

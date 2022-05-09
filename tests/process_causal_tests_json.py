@@ -16,6 +16,12 @@ import causal_test_setup as cts
 
 
 def populate_metas(metas, outputs, data):
+    """ Populate data with meta-variable values and add distributions to Causal Testing Framework Variables
+
+    :param list metas: list of Causal Testing Framework Meta classes
+    :param list outputs: list of Causal Testing Framework Output classes
+    :param pd.Dataframe data: dataframe containing runtime data of scenario
+    """
 
     for meta in metas:
         meta.populate(data)
@@ -126,7 +132,6 @@ def main():
         "ChangeByFactor(2)": lambda x: modelling_scenario.treatment_variables[x].z3 == modelling_scenario.variables[
             x].z3 * 2
     }
-
 
     executed_tests = 0
     failures = 0

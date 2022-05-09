@@ -123,6 +123,8 @@ def main():
             x].z3 * 2
     }
     for test in test_plan['tests']:
+        if "skip" in test and test['skip']:
+            continue
         abstract_test = AbstractCausalTestCase(
             scenario=modelling_scenario,
             intervention_constraints=[mutate[v](k) for k, v in test['mutations'].items()],

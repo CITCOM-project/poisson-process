@@ -15,7 +15,23 @@ from fitter import Fitter, get_common_distributions
 import causal_test_setup as cts
 
 
-def populate_metas(metas, outputs, data):
+def get_args() -> argparse.Namespace:
+    """ Command-line arguments
+
+    :return: parsed command line arguments
+    """
+    parser = argparse.ArgumentParser(
+        description='A script for parsing json config files for the Causal Testing Framework')
+    parser.add_argument("--json_path", help="path to the json file containing the causal tests",
+                        default="causal_tests.json")
+    parser.add_argument("--data_path", help="path to the data csv file containing the runtime data of the scenario",
+                        default="data.csv")
+    parser.add_argument("--dag_path", help="path to the DAG (Directed Acyclic  Graph) dot file",
+                        default="dag.dot")
+    return parser.parse_args()
+
+
+def populate_metas(metas: list[Meta], outputs: list[Output], data: pd.DataFrame):
     """ Populate data with meta-variable values and add distributions to Causal Testing Framework Variables
 
     :param list metas: list of Causal Testing Framework Meta classes
@@ -35,10 +51,11 @@ def populate_metas(metas, outputs, data):
         print(var.name, f"{dist}({params})")
 
 
-def json_parse(file) -> tuple[list, list, list, dict, pd.DataFrame]:
+def json_parse(json_path, data_path) -> tuple[list, list, list, dict, pd.DataFrame]:
     """Parse a JSON input file into inputs, outputs, metas and a test plan
 
-    :param file: path to JSON input file to be parsed
+    :param json_path: path to JSON input file to be parsed
+    :param data_path: path to the csv containing run-time data
     :returns:
         - inputs -  variables that are input parameters to the system
         - outputs -  variables that are outputs from the system
@@ -47,7 +64,7 @@ def json_parse(file) -> tuple[list, list, list, dict, pd.DataFrame]:
           These parameters can be made explicit by instantiating them as metavariables.
         - test_plan - json object containing execution data for the system-under-test
     """
-    with open(file) as f:
+    with open(json_path) as f:
         test_plan = json.load(f)
 
     type_dict = {"float": float, "str": str, "int": int}
@@ -57,27 +74,26 @@ def json_parse(file) -> tuple[list, list, list, dict, pd.DataFrame]:
     metas = [Meta(i['name'], type_dict[i['type']], getattr(cts, i['populate'])) for i in
              test_plan['metas']] if "metas" in test_plan else []
 
-    data = pd.read_csv(test_plan['data'])
-    print(type(data))
+    data = pd.read_csv(data_path)
     return inputs, outputs, metas, test_plan, data
 
 
 # TODO: Work out how best to get constraints in there
 
 
-def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan: dict, causal_specification) -> bool():
+def execute_test_case(causal_test_case, estimator, modelling_scenario, data_path, causal_specification) -> bool():
     """
     Takes a given test case and runs it using the CausalTestingFramework.
 
     :param causal_test_case:
     :param estimator:
     :param modelling_scenario:
-    :param test_plan:
+    :param data_path:
     :param causal_specification:
     :return: True if test failed, returns false otherwise.
     """
     failed = False
-    data_collector = ObservationalDataCollector(modelling_scenario, test_plan['data'])
+    data_collector = ObservationalDataCollector(modelling_scenario, data_path)
     causal_test_engine = CausalTestEngine(causal_test_case, causal_specification, data_collector)
     minimal_adjustment_set = causal_test_engine.load_data(index_col=0)
     treatment_vars = list(causal_test_case.treatment_input_configuration)
@@ -113,19 +129,18 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, test_plan
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description='A script for parsing json config files for the Causal Testing Framework')
-    parser.add_argument("--json_path", help="path to the json file containing the causal tests",
-                        default="causal_tests.json")
-    args = parser.parse_args()
-    json_path = args.json_path
 
-    inputs, outputs, metas, test_plan, data = json_parse(json_path)
+    args = get_args()
+    json_path = args.json_path
+    dag_path = args.dag_path
+    data_path = args.data_path
+
+    inputs, outputs, metas, test_plan, data = json_parse(json_path, data_path)
     populate_metas(metas, outputs, data)
 
     modelling_scenario = Scenario(inputs + outputs + metas, None)
     modelling_scenario.setup_treatment_variables()
-    causal_specification = CausalSpecification(scenario=modelling_scenario, causal_dag=CausalDAG(test_plan['dag']))
+    causal_specification = CausalSpecification(scenario=modelling_scenario, causal_dag=CausalDAG(dag_path))
 
     mutate = {
         "Increase": lambda x: modelling_scenario.treatment_variables[x].z3 > modelling_scenario.variables[x].z3,

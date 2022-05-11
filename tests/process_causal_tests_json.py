@@ -45,9 +45,9 @@ def populate_metas(metas: list[Meta], outputs: list[Output], data: pd.DataFrame)
     for var in metas + outputs:
         f = Fitter(data[var.name], distributions=get_common_distributions())
         f.fit()
+
         (dist, params) = list(f.get_best(method="sumsquare_error").items())[0]
-        params = ",".join([f"{k}={v}" for k, v in params.items()])
-        var.distribution = eval(f"scipy.stats.{dist}({params})")
+        var.distribution = getattr(scipy.stats, dist)(**params)
         print(var.name, f"{dist}({params})")
 
 
@@ -172,7 +172,7 @@ def main():
         print(len(concrete_tests))
         for concrete_test in concrete_tests:
             executed_tests += 1
-            failed = execute_test_case(concrete_test, cts.estimators[test['estimator']], modelling_scenario, test_plan,
+            failed = execute_test_case(concrete_test, cts.estimators[test['estimator']], modelling_scenario, data_path,
                                        causal_specification)
             if failed:
                 failures += 1

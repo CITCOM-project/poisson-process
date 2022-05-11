@@ -21,7 +21,9 @@ def get_args() -> argparse.Namespace:
     :return: parsed command line arguments
     """
     parser = argparse.ArgumentParser(
-        description='A script for parsing json config files for the Causal Testing Framework')
+        description="A script for parsing json config files for the Causal Testing Framework")
+    parser.add_argument("-f", help="if included, the script will stop if a test fails",
+                        action="store_true")
     parser.add_argument("--json_path", help="path to the json file containing the causal tests",
                         default="causal_tests.json")
     parser.add_argument("--data_path", help="path to the data csv file containing the runtime data of the scenario",
@@ -81,7 +83,8 @@ def json_parse(json_path, data_path) -> tuple[list, list, list, dict, pd.DataFra
 # TODO: Work out how best to get constraints in there
 
 
-def execute_test_case(causal_test_case, estimator, modelling_scenario, data_path, causal_specification) -> bool():
+def execute_test_case(causal_test_case, estimator, modelling_scenario, data_path, causal_specification, f_flag: bool)\
+        -> bool():
     """
     Takes a given test case and runs it using the CausalTestingFramework.
 
@@ -90,6 +93,7 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, data_path
     :param modelling_scenario:
     :param data_path:
     :param causal_specification:
+    :param f_flag:
     :return: True if test failed, returns false otherwise.
     """
     failed = False
@@ -121,7 +125,9 @@ def execute_test_case(causal_test_case, estimator, modelling_scenario, data_path
         result_string = f"{causal_test_result.ci_low()} < {causal_test_result.ate} <  {causal_test_result.ci_high()}"
     else:
         result_string = causal_test_result.ate
-    assert test_passes, f"{causal_test_case}\n    FAILED - expected {causal_test_case.expected_causal_effect}, got {result_string}"
+    if f_flag:
+        assert test_passes, f"{causal_test_case}\n    FAILED - expected {causal_test_case.expected_causal_effect}, " \
+                            f"got {result_string}"
     if not test_passes:
         failed = True
         print(f"    FAILED - expected {causal_test_case.expected_causal_effect}, got {causal_test_result.ate}")
@@ -134,7 +140,7 @@ def main():
     json_path = args.json_path
     dag_path = args.dag_path
     data_path = args.data_path
-
+    f_flag = args.f
     inputs, outputs, metas, test_plan, data = json_parse(json_path, data_path)
     populate_metas(metas, outputs, data)
 
@@ -173,7 +179,7 @@ def main():
         for concrete_test in concrete_tests:
             executed_tests += 1
             failed = execute_test_case(concrete_test, cts.estimators[test['estimator']], modelling_scenario, data_path,
-                                       causal_specification)
+                                       causal_specification, f_flag)
             if failed:
                 failures += 1
 

@@ -4,7 +4,6 @@ from causal_testing.specification.causal_dag import CausalDAG
 from causal_testing.specification.causal_specification import CausalSpecification
 from causal_testing.generation.abstract_causal_test_case import AbstractCausalTestCase
 from causal_testing.data_collection.data_collector import ObservationalDataCollector
-from causal_testing.testing.causal_test_outcome import ExactValue, Positive, Negative, CausalTestResult, NoEffect
 from causal_testing.testing.causal_test_engine import CausalTestEngine
 import argparse
 import scipy
@@ -47,7 +46,6 @@ def populate_metas(metas: list[Meta], outputs: list[Output], data: pd.DataFrame)
     for var in metas + outputs:
         f = Fitter(data[var.name], distributions=get_common_distributions())
         f.fit()
-
         (dist, params) = list(f.get_best(method="sumsquare_error").items())[0]
         var.distribution = getattr(scipy.stats, dist)(**params)
         print(var.name, f"{dist}({params})")

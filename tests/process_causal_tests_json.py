@@ -10,7 +10,7 @@ import scipy
 import json
 import pandas as pd
 from fitter import Fitter, get_common_distributions
-
+from pathlib import Path
 import causal_test_setup as cts
 
 
@@ -24,11 +24,11 @@ def get_args() -> argparse.Namespace:
     parser.add_argument("-f", help="if included, the script will stop if a test fails",
                         action="store_true")
     parser.add_argument("--json_path", help="path to the json file containing the causal tests",
-                        default="causal_tests.json")
+                        default="causal_tests.json", type=Path)
     parser.add_argument("--data_path", help="path to the data csv file containing the runtime data of the scenario",
-                        default="data.csv")
+                        default="data.csv", type=Path)
     parser.add_argument("--dag_path", help="path to the DAG (Directed Acyclic  Graph) dot file",
-                        default="dag.dot")
+                        default="dag.dot", type=Path)
     return parser.parse_args()
 
 
@@ -81,17 +81,19 @@ def json_parse(json_path, data_path) -> tuple[list, list, list, dict, pd.DataFra
 # TODO: Work out how best to get constraints in there
 
 
-def execute_test_case(causal_test_case, estimator, modelling_scenario, data_path, causal_specification, f_flag: bool)\
-        -> bool():
+def execute_test_case(causal_test_case, estimator, modelling_scenario, data_path: Path, causal_specification,
+                      f_flag: bool) -> bool():
     """
     Takes a given test case and runs it using the CausalTestingFramework.
 
-    :param causal_test_case:
-    :param estimator:
-    :param modelling_scenario:
-    :param data_path:
-    :param causal_specification:
-    :param f_flag:
+    :param causal_test_case: A causal test case is a triple (X, Delta, Y), where X is an input configuration, Delta is
+        an intervention, and Y is the expected causal effect on a particular output.
+    :param estimator: An estimator contains all of the information necessary to compute a causal estimate for the effect of changing
+    a set of treatment variables to a set of values.
+    :param modelling_scenario: a series of constraints placed over a set of input variables
+    :param data_path: path to the data file
+    :param causal_specification: Combination of Causal Dag and scenario
+    :param f_flag: Flag that if true, will stop script upon a test failing
     :return: True if test failed, returns false otherwise.
     """
     failed = False

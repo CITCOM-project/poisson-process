@@ -1,0 +1,3203 @@
+[
+  {
+    "control_input_configuration": {
+      "intensity": 1
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 2
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 2
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 4
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 4
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 8
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 8
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 16
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 1
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 2
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 2
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 4
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 4
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 8
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 8
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 16
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 1
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 2
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 2
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 4
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 4
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 8
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 8
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 16
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 1
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 2
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 2
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 4
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 4
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 8
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 8
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 16
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 1
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 2
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 2
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 4
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 4
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 8
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 8
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 16
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 1
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 2
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 2
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 4
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 4
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 8
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 8
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 16
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 1
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 2
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 2
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 4
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 4
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 8
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 8
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 16
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 1
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 2
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 2
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 4
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 4
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 8
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 8
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 16
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 1
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 2
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 2
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 4
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 4
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 8
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 8
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 16
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 1
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 2
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 2
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 4
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 4
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 8
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "intensity": 8
+    },
+    "expected_causal_effect": "ExactValue: 4\u00b10.5",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "intensity": 16
+    },
+    "estimate_type": "risk_ratio",
+    "effect_modifier_configuration": {}
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 0
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 0
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 0
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 0
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 0
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 0
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 0
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 0
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 0
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 1
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 1
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 1
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 1
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 1
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 1
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 1
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 1
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 1
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 2
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 2
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 2
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 2
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 2
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 2
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 2
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 2
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 2
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 3
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 3
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 3
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 3
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 3
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 3
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 3
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 3
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 3
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 4
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 4
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 4
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 4
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 4
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 4
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 4
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 4
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 4
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 5
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 5
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 5
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 5
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 5
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 5
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 5
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 5
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 5
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 6
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 6
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 6
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 6
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 6
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 6
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 6
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 6
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 6
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 7
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 7
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 7
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 7
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 7
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 7
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 7
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 7
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 7
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 8
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 8
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 8
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 8
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 8
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 8
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 8
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 8
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 8
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 9
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 9
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 9
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 9
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 9
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 9
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 9
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 9
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 9
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 10
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 10
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 10
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 10
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 10
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 10
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 10
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 10
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 10
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 11
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 11
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 11
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 11
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 11
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 11
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 11
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 11
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 11
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 12
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 12
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 12
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 12
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 12
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 12
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 12
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 12
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 12
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 13
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 13
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 13
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 13
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 13
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 13
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 13
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 13
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 13
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 14
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 14
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 14
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 14
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 14
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 14
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 14
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 14
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 14
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 15
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 15
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 15
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 15
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 15
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 15
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 15
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 15
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 15
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 1
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 2
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 16
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 2
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 3
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 16
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 3
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 4
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 16
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 4
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 5
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 16
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 5
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 6
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 16
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 6
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 7
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 16
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 7
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 8
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 16
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 8
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 9
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 16
+    }
+  },
+  {
+    "control_input_configuration": {
+      "width": 9
+    },
+    "expected_causal_effect": "Positive",
+    "outcome_variables": [
+      "num_shapes_unit"
+    ],
+    "intervention": null,
+    "treatment_input_configuration": {
+      "width": 10
+    },
+    "estimate_type": "ate_calculated",
+    "effect_modifier_configuration": {
+      "intensity": 16
+    }
+  }
+]

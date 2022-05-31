@@ -38,6 +38,7 @@ def should_test(treatment, outcome, dag, scenario):
         any([isinstance(scenario.variables[p], Input) for p in ancestors(dag, outcome)])
     ):
         return False
+    # We don't want to test edges that would cause a cycle in the graph
     dag_ = dag.copy()
     dag_.add_edge(treatment, outcome)
     if nx.algorithms.dag.is_directed_acyclic_graph(dag_):
@@ -96,4 +97,4 @@ def interaction_tests(dag):
 
 def direct_effect_is_total(dag, treatment, outcome):
     all_paths = list(nx.all_simple_paths(dag, treatment, outcome))
-    return all_paths == [[treatment, outcome]]
+    return all_paths == [[treatment, outcome]] or all_paths == []

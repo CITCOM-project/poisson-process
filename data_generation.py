@@ -6,39 +6,12 @@ Created on Tue Mar 29 10:56:26 2022
 @author: michael
 """
 import pandas as pd
-from poisson_line_process import run
+from poisson_line_process import run_data
 import matplotlib.pyplot as plt
 import os
 import numpy as np
-import multiprocessing
 from scipy.stats import uniform
 import lhsmdu
-
-
-def run_row(row):
-    return run(row["width"], row["height"], row["intensity"])
-
-
-def run_data(data, datapath, parallel=True):
-    rows = map(lambda x: x[1], data.iterrows())
-
-    if parallel:
-        pool = multiprocessing.Pool()
-        runs = pool.map(run_row, rows)
-    else:
-        runs = [run_row(row) for row in rows]
-
-    num_lines, num_shapes = zip(*runs)
-
-    data["num_lines_abs"] = num_lines
-    data["num_shapes_abs"] = num_shapes
-
-    area = data["width"] * data["height"]
-    data["num_lines_unit"] = data["num_lines_abs"] / area
-    data["num_shapes_unit"] = data["num_shapes_abs"] / area
-
-    data.to_csv(datapath)
-    return data
 
 
 num_repeats = 100

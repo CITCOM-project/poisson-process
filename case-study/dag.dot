@@ -10,4 +10,4 @@ digraph poisson_line_process {
   num_lines_abs -> num_lines_unit;
   num_shapes_abs -> num_shapes_unit;
   intensity -> num_lines_abs;
-  num_lines_abs -> num_shapes_abs ;}
+  num_lines_abs -> num_shapes_abs;}

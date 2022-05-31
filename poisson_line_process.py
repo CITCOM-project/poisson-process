@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import multiprocessing
 
 import numpy as np
 from numpy.random import default_rng
@@ -103,15 +104,22 @@ def side(line, point):
 def plot_lines(
     lines, low_x, high_x, low_y, high_y,
 ):
+    fig, ax = plt.subplots(figsize=((high_x - low_x)*10, (high_y - low_y)*10))
     for current_line in lines:
         y_min = current_line[0] * low_x + current_line[1]
         y_max = current_line[0] * high_x + current_line[1]
-        plt.plot([low_x, high_x], [y_min, y_max])
+        ax.plot([low_x, high_x], [y_min, y_max], color="white")
+
+    print(len(lines), "lines")
+    polygons = detect_shapes(lines, 0, width, 0, height)
+    print(len(polygons), "polygons")
+    for polygon in polygons:
+        plt.fill(*polygon.exterior.xy)
 
     plt.xlim([low_x, high_x])
     plt.ylim([low_y, high_y])
-
-    # plt.show()
+    plt.axis('off')
+    fig.savefig("../research-poster/poisson-process.svg")
 
 
 def detect_shapes(
@@ -160,10 +168,36 @@ def run(width, height, intensity):
     return (len(lines), len(polygons))
 
 
+def run_row(row):
+    return run(row["width"], row["height"], row["intensity"])
+
+
+def run_data(data, datapath, parallel=True):
+    rows = map(lambda x: x[1], data.iterrows())
+
+    if parallel:
+        pool = multiprocessing.Pool()
+        runs = pool.map(run_row, rows)
+    else:
+        runs = [run_row(row) for row in rows]
+
+    num_lines, num_shapes = zip(*runs)
+
+    data["num_lines_abs"] = num_lines
+    data["num_shapes_abs"] = num_shapes
+
+    area = data["width"] * data["height"]
+    data["num_lines_unit"] = data["num_lines_abs"] / area
+    data["num_shapes_unit"] = data["num_shapes_abs"] / area
+
+    data.to_csv(datapath)
+    return data
+
+
 if __name__ == "__main__":
     width = 1
     height = 1
-    intensity = 2
+    intensity = 2.5
     orientation_distribution = uniform(loc=0, scale=np.pi)
     lines = realize_poisson_line_process(
         width, height, intensity, orientation_distribution
@@ -172,10 +206,4 @@ if __name__ == "__main__":
     # is given by the product of the intensity and the perimeter of the convex region.
     # Thus, we expect (width+height)*2*intensity lines crossing the rectangle in case of a uniform orientation distribution on [0,pi).
 
-    print(len(lines), "lines")
     plot_lines(lines, 0, width, 0, height)
-
-    polygons = detect_shapes(lines, 0, width, 0, height)
-    print(len(polygons), "polygons")
-    for polygon in polygons:
-        plt.fill(*polygon.exterior.xy)

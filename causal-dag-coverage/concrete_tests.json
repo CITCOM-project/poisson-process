@@ -7,12 +7,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 2
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -22,12 +22,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 4
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -37,12 +37,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 8
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -52,12 +52,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 16
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -67,12 +67,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 2
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -82,12 +82,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 4
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -97,12 +97,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 8
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -112,12 +112,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 16
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -127,12 +127,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 2
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -142,12 +142,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 4
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -157,12 +157,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 8
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -172,12 +172,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 16
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -187,12 +187,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 2
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -202,12 +202,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 4
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -217,12 +217,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 8
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -232,12 +232,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 16
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -247,12 +247,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 2
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -262,12 +262,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 4
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -277,12 +277,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 8
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -292,12 +292,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 16
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -307,12 +307,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 2
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -322,12 +322,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 4
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -337,12 +337,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 8
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -352,12 +352,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 16
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -367,12 +367,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 2
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -382,12 +382,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 4
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -397,12 +397,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 8
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -412,12 +412,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 16
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -427,12 +427,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 2
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -442,12 +442,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 4
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -457,12 +457,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 8
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -472,12 +472,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 16
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -487,12 +487,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 2
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -502,12 +502,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 4
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -517,12 +517,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 8
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -532,12 +532,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 16
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -547,12 +547,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 2
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -562,12 +562,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 4
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -577,12 +577,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 8
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -592,12 +592,12 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "intensity": 16
     },
     "estimate_type": "risk_ratio",
-    "effect_modifier_configuration": {}
+    "effect_modifier_configuration": {},
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -607,14 +607,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 0
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -624,14 +624,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 0
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -641,14 +641,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 0
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -658,14 +658,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 0
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -675,14 +675,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 0
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -692,14 +692,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 0
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -709,14 +709,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 0
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -726,14 +726,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 0
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -743,14 +743,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 0
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -760,14 +760,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 1
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -777,14 +777,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 1
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -794,14 +794,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 1
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -811,14 +811,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 1
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -828,14 +828,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 1
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -845,14 +845,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 1
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -862,14 +862,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 1
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -879,14 +879,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 1
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -896,14 +896,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 1
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -913,14 +913,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 2
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -930,14 +930,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 2
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -947,14 +947,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 2
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -964,14 +964,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 2
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -981,14 +981,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 2
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -998,14 +998,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 2
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1015,14 +1015,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 2
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1032,14 +1032,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 2
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1049,14 +1049,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 2
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1066,14 +1066,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 3
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1083,14 +1083,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 3
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1100,14 +1100,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 3
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1117,14 +1117,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 3
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1134,14 +1134,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 3
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1151,14 +1151,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 3
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1168,14 +1168,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 3
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1185,14 +1185,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 3
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1202,14 +1202,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 3
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1219,14 +1219,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 4
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1236,14 +1236,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 4
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1253,14 +1253,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 4
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1270,14 +1270,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 4
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1287,14 +1287,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 4
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1304,14 +1304,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 4
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1321,14 +1321,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 4
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1338,14 +1338,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 4
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1355,14 +1355,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 4
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1372,14 +1372,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 5
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1389,14 +1389,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 5
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1406,14 +1406,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 5
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1423,14 +1423,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 5
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1440,14 +1440,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 5
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1457,14 +1457,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 5
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1474,14 +1474,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 5
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1491,14 +1491,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 5
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1508,14 +1508,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 5
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1525,14 +1525,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 6
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1542,14 +1542,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 6
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1559,14 +1559,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 6
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1576,14 +1576,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 6
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1593,14 +1593,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 6
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1610,14 +1610,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 6
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1627,14 +1627,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 6
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1644,14 +1644,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 6
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1661,14 +1661,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 6
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1678,14 +1678,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 7
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1695,14 +1695,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 7
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1712,14 +1712,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 7
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1729,14 +1729,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 7
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1746,14 +1746,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 7
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1763,14 +1763,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 7
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1780,14 +1780,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 7
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1797,14 +1797,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 7
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1814,14 +1814,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 7
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1831,14 +1831,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 8
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1848,14 +1848,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 8
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1865,14 +1865,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 8
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1882,14 +1882,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 8
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1899,14 +1899,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 8
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1916,14 +1916,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 8
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1933,14 +1933,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 8
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1950,14 +1950,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 8
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1967,14 +1967,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 8
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -1984,14 +1984,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 9
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2001,14 +2001,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 9
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2018,14 +2018,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 9
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2035,14 +2035,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 9
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2052,14 +2052,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 9
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2069,14 +2069,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 9
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2086,14 +2086,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 9
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2103,14 +2103,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 9
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2120,14 +2120,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 9
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2137,14 +2137,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 10
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2154,14 +2154,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 10
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2171,14 +2171,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 10
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2188,14 +2188,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 10
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2205,14 +2205,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 10
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2222,14 +2222,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 10
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2239,14 +2239,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 10
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2256,14 +2256,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 10
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2273,14 +2273,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 10
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2290,14 +2290,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 11
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2307,14 +2307,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 11
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2324,14 +2324,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 11
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2341,14 +2341,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 11
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2358,14 +2358,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 11
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2375,14 +2375,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 11
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2392,14 +2392,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 11
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2409,14 +2409,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 11
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2426,14 +2426,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 11
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2443,14 +2443,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 12
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2460,14 +2460,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 12
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2477,14 +2477,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 12
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2494,14 +2494,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 12
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2511,14 +2511,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 12
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2528,14 +2528,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 12
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2545,14 +2545,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 12
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2562,14 +2562,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 12
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2579,14 +2579,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 12
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2596,14 +2596,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 13
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2613,14 +2613,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 13
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2630,14 +2630,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 13
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2647,14 +2647,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 13
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2664,14 +2664,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 13
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2681,14 +2681,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 13
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2698,14 +2698,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 13
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2715,14 +2715,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 13
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2732,14 +2732,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 13
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2749,14 +2749,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 14
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2766,14 +2766,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 14
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2783,14 +2783,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 14
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2800,14 +2800,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 14
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2817,14 +2817,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 14
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2834,14 +2834,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 14
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2851,14 +2851,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 14
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2868,14 +2868,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 14
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2885,14 +2885,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 14
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2902,14 +2902,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 15
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2919,14 +2919,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 15
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2936,14 +2936,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 15
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2953,14 +2953,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 15
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2970,14 +2970,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 15
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -2987,14 +2987,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 15
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3004,14 +3004,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 15
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3021,14 +3021,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 15
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3038,14 +3038,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 15
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3055,14 +3055,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 2
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 16
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3072,14 +3072,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 3
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 16
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3089,14 +3089,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 4
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 16
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3106,14 +3106,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 5
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 16
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3123,14 +3123,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 6
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 16
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3140,14 +3140,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 7
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 16
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3157,14 +3157,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 8
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 16
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3174,14 +3174,14 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 9
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 16
-    }
+    },
+    "effect": "total"
   },
   {
     "control_input_configuration": {
@@ -3191,13 +3191,13 @@
     "outcome_variables": [
       "num_shapes_unit"
     ],
-    "intervention": null,
     "treatment_input_configuration": {
       "width": 10
     },
     "estimate_type": "ate_calculated",
     "effect_modifier_configuration": {
       "intensity": 16
-    }
+    },
+    "effect": "total"
   }
 ]

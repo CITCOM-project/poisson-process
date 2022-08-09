@@ -37,7 +37,7 @@ for wh in range(1, 11):
         plt.ylabel("num_shapes_unit")
         plt.title(f"width = height = {wh}")
         plt.legend()
-        plt.show()
+        # plt.show()
     else:
         print(f"Running RCT for {rct_datapath}")
         repeats = [rct_samples.copy() for i in range(num_repeats)]
@@ -54,7 +54,7 @@ for i in range(1, 11):
         plt.xlabel("area")
         plt.ylabel("num_shapes_unit")
         plt.title(f"intensity = {i}")
-        plt.show()
+        # plt.show()
     else:
         print(f"Running RCT for {rct_datapath}")
         repeats = [rct_samples.copy() for i in range(num_repeats)]
@@ -74,7 +74,7 @@ for num_repeats in [100, 200, 300, 400]:
         random_samples["width"] = lhsmdu.inverseTransformSample(
             uniform(0, 10), random_samples["width"]
         )
-        
+
         random_samples["height"] = lhsmdu.inverseTransformSample(
             uniform(0, 10), random_samples["height"]
         )

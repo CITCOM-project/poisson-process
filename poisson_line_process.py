@@ -7,6 +7,9 @@ from numpy.random import default_rng
 from scipy.stats import uniform
 from shapely import ops as ops
 from shapely.geometry import shape, MultiLineString, Polygon, MultiPolygon
+from matplotlib.patches import Rectangle
+
+# plt.rcParams.update({'font.size': 22})
 
 
 def realize_poisson_line_process(
@@ -102,32 +105,51 @@ def side(line, point):
 
 
 def plot_lines(
-    lines, low_x, high_x, low_y, high_y,
+    lines, width, height
 ):
-    fig, ax = plt.subplots(figsize=((high_x - low_x)*10, (high_y - low_y)*10))
+    high_x = width/2
+    low_x = -high_x
+    high_y = height/2
+    low_y = -high_y
+    fig, ax = plt.subplots(figsize=(6, 6))
     for current_line in lines:
-        y_min = current_line[0] * low_x + current_line[1]
-        y_max = current_line[0] * high_x + current_line[1]
-        ax.plot([low_x, high_x], [y_min, y_max], color="black")
-
-    print(len(lines), "lines")
-    polygons = detect_shapes(lines, 0, width, 0, height)
-    print(len(polygons), "polygons")
-    for polygon in polygons:
-        plt.fill(*polygon.exterior.xy, color="white")
-
-    plt.xlim([low_x, high_x])
-    plt.ylim([low_y, high_y])
+        y_min = current_line[0] * (-width) + current_line[1]
+        y_max = current_line[0] * width + current_line[1]
+        ax.plot([-width, width], [y_min, y_max], color="black")
     
-    plt.xticks(range(low_x, high_x))
-    plt.yticks(range(low_y, high_y))
-    # plt.axis('off')
-    fig.savefig("poisson-process.svg")
+    print(len(lines), "lines")
+    polygons = detect_shapes(lines, width, height)
+    print(len(polygons), "polygons")
+    for i, polygon in enumerate(polygons, start=1):
+        x, y = polygon.centroid.coords[0]
+        ax.fill(*polygon.exterior.xy, color="white")
+        ax.text(x, y, str(i))
+
+    plt.xlim([2*low_x, 2*high_x])
+    plt.ylim([2*low_y, 2*high_y])
+
+    plt.xticks(np.linspace(-width, width, 5))
+    plt.yticks(np.linspace(-height, height, 5))
+    
+    ax.add_patch(Rectangle((low_x, low_y),width,height, 
+                        fill=True,
+                        color="lightgray",
+                        linewidth=4))
+    ax.axvline(x = low_x, color = 'gray', linestyle="dashed", linewidth=3)
+    ax.axvline(x = high_x, color = 'gray', linestyle="dashed", linewidth=3)
+    ax.axhline(y = low_y, color = 'gray', linestyle="dashed", linewidth=3)
+    ax.axhline(y = high_y, color = 'gray', linestyle="dashed", linewidth=3)
+    fig.savefig("poisson-process.svg", bbox_inches='tight')
+    fig.savefig("poisson-process.pgf", bbox_inches='tight')
 
 
 def detect_shapes(
-    lines, low_x, high_x, low_y, high_y,
+    lines, width, height
 ):
+    high_x = width/2
+    low_x = -high_x
+    high_y = height/2
+    low_y = -high_y
     line_pairs = []
     for current_line in lines:
         y_min = current_line[0] * low_x + current_line[1]
@@ -167,7 +189,7 @@ def run(width, height, intensity):
     lines = realize_poisson_line_process(
         width, height, intensity, orientation_distribution
     )
-    polygons = detect_shapes(lines, -width/2, width/2, -height/2, height/2)
+    polygons = detect_shapes(lines, width, height)
     return (len(lines), len(polygons))
 
 
@@ -198,9 +220,9 @@ def run_data(data, datapath, parallel=True):
 
 
 if __name__ == "__main__":
-    width = 2
-    height = 2
-    intensity = 2.5
+    width = 1
+    height = 1
+    intensity = 1
     orientation_distribution = uniform(loc=0, scale=np.pi)
     lines = realize_poisson_line_process(
         width, height, intensity, orientation_distribution
@@ -209,4 +231,4 @@ if __name__ == "__main__":
     # is given by the product of the intensity and the perimeter of the convex region.
     # Thus, we expect (width+height)*2*intensity lines crossing the rectangle in case of a uniform orientation distribution on [0,pi).
 
-    plot_lines(lines, -width/2, width/2, -height/2, height/2)
+    plot_lines(lines, width, height)

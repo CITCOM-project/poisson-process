@@ -68,7 +68,7 @@ for num_repeats in [100, 200, 300, 400]:
     else:
         print(f"Running random for {random_datapath}")
         random_samples = pd.concat([pd.DataFrame(
-            lhsmdu.sample(3, 10).T, columns=["width", "intensity"],
+            lhsmdu.sample(3, 10).T, columns=["width", "height", "intensity"],
         ) for _ in range(num_repeats)])
 
         random_samples["width"] = lhsmdu.inverseTransformSample(

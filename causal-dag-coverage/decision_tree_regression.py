@@ -20,7 +20,7 @@ import pandas as pd
 # print(X)
 
 data = pd.read_csv("../data/random/data_random_1000.csv")
-X = data[['intensity', 'width']].to_numpy()
+X = data[['intensity']].to_numpy()
 y = data[['num_shapes_unit']].to_numpy()
 
 

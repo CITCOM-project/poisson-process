@@ -108,18 +108,21 @@ def plot_lines(
     for current_line in lines:
         y_min = current_line[0] * low_x + current_line[1]
         y_max = current_line[0] * high_x + current_line[1]
-        ax.plot([low_x, high_x], [y_min, y_max], color="white")
+        ax.plot([low_x, high_x], [y_min, y_max], color="black")
 
     print(len(lines), "lines")
     polygons = detect_shapes(lines, 0, width, 0, height)
     print(len(polygons), "polygons")
     for polygon in polygons:
-        plt.fill(*polygon.exterior.xy)
+        plt.fill(*polygon.exterior.xy, color="white")
 
     plt.xlim([low_x, high_x])
     plt.ylim([low_y, high_y])
-    plt.axis('off')
-    fig.savefig("../research-poster/poisson-process.svg")
+    
+    plt.xticks(range(low_x, high_x))
+    plt.yticks(range(low_y, high_y))
+    # plt.axis('off')
+    fig.savefig("poisson-process.svg")
 
 
 def detect_shapes(
@@ -164,7 +167,7 @@ def run(width, height, intensity):
     lines = realize_poisson_line_process(
         width, height, intensity, orientation_distribution
     )
-    polygons = detect_shapes(lines, 0, width, 0, height)
+    polygons = detect_shapes(lines, -width/2, width/2, -height/2, height/2)
     return (len(lines), len(polygons))
 
 
@@ -195,8 +198,8 @@ def run_data(data, datapath, parallel=True):
 
 
 if __name__ == "__main__":
-    width = 1
-    height = 1
+    width = 2
+    height = 2
     intensity = 2.5
     orientation_distribution = uniform(loc=0, scale=np.pi)
     lines = realize_poisson_line_process(
@@ -206,4 +209,4 @@ if __name__ == "__main__":
     # is given by the product of the intensity and the perimeter of the convex region.
     # Thus, we expect (width+height)*2*intensity lines crossing the rectangle in case of a uniform orientation distribution on [0,pi).
 
-    plot_lines(lines, 0, width, 0, height)
+    plot_lines(lines, -width/2, width/2, -height/2, height/2)

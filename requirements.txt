@@ -7,3 +7,5 @@ scipy
 Shapely
 statsmodels
 git+https://github.com/CITCOM-project/CausalTestingFramework.git
+multithreading
+cosmic-ray

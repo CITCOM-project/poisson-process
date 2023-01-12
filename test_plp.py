@@ -22,7 +22,7 @@ class Tests(unittest.TestCase):
         h = samples['height']
         i = samples['intensity']
 
-        pool = multiprocessing.Pool(4)
+        # pool = multiprocessing.Pool(4)
         # num_lines, num_shapes = zip(*pool.map(run_row, samples.iterrows()))
         num_lines, num_shapes = zip(*[run_row(row) for row in samples.iterrows()])
 

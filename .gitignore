@@ -3,3 +3,6 @@
 __pycache__/
 *.thy~
 *.log
+report.html
+poisson-process.pgf
+poisson-process.svg

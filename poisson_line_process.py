@@ -80,7 +80,7 @@ def realize_poisson_line_process(
             else:
                 # Negative gradient => Check if upper right and lower left left corner are on the same side of the line
                 side_1 = side(current_line, (width / 2, height / 2))
-                side_2 = side(current_line, (-width / 2, -height / 2))
+                side_2 = side(current_line, (-width / 3, -height / 2))
             if side_1 == side_2:
                 continue
 
@@ -102,45 +102,6 @@ def convert_line_representation(distance_to_origin, angle):
 # We assume that line is a tuple of m and t (f(x)=m*x+t)
 def side(line, point):
     return np.cross(np.array((1, line[0])), point - np.array((0, line[1]))) > 0
-
-
-def plot_lines(
-    lines, width, height
-):
-    high_x = width/2
-    low_x = -high_x
-    high_y = height/2
-    low_y = -high_y
-    fig, ax = plt.subplots(figsize=(6, 6))
-    for current_line in lines:
-        y_min = current_line[0] * (-width) + current_line[1]
-        y_max = current_line[0] * width + current_line[1]
-        ax.plot([-width, width], [y_min, y_max], color="black")
-    
-    print(len(lines), "lines")
-    polygons = detect_shapes(lines, width, height)
-    print(len(polygons), "polygons")
-    for i, polygon in enumerate(polygons, start=1):
-        x, y = polygon.centroid.coords[0]
-        ax.fill(*polygon.exterior.xy, color="white")
-        ax.text(x, y, str(i))
-
-    plt.xlim([2*low_x, 2*high_x])
-    plt.ylim([2*low_y, 2*high_y])
-
-    plt.xticks(np.linspace(-width, width, 5))
-    plt.yticks(np.linspace(-height, height, 5))
-    
-    ax.add_patch(Rectangle((low_x, low_y),width,height, 
-                        fill=True,
-                        color="lightgray",
-                        linewidth=4))
-    ax.axvline(x = low_x, color = 'gray', linestyle="dashed", linewidth=3)
-    ax.axvline(x = high_x, color = 'gray', linestyle="dashed", linewidth=3)
-    ax.axhline(y = low_y, color = 'gray', linestyle="dashed", linewidth=3)
-    ax.axhline(y = high_y, color = 'gray', linestyle="dashed", linewidth=3)
-    fig.savefig("poisson-process.svg", bbox_inches='tight')
-    fig.savefig("poisson-process.pgf", bbox_inches='tight')
 
 
 def detect_shapes(
@@ -217,18 +178,3 @@ def run_data(data, datapath, parallel=True):
 
     data.to_csv(datapath)
     return data
-
-
-if __name__ == "__main__":
-    width = 1
-    height = 1
-    intensity = 1
-    orientation_distribution = uniform(loc=0, scale=np.pi)
-    lines = realize_poisson_line_process(
-        width, height, intensity, orientation_distribution
-    )
-    # If the orientation is uniformly distributed in [0,pi), the average number of lines intersecting a convex region
-    # is given by the product of the intensity and the perimeter of the convex region.
-    # Thus, we expect (width+height)*2*intensity lines crossing the rectangle in case of a uniform orientation distribution on [0,pi).
-
-    plot_lines(lines, width, height)
